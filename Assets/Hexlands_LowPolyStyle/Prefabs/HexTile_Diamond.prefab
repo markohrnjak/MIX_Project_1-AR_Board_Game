@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4450519444070790}
-  - component: {fileID: 7297007005748770077}
-  - component: {fileID: 2866182207471612208}
   m_Layer: 0
   m_Name: HexTile_Diamond
   m_TagString: Untagged
@@ -34,32 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7297007005748770077
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009527748241020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2866182207471612208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009527748241020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1781eb159be6b494288460466d150a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onCollisionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1202581608872086
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +44,8 @@ GameObject:
   - component: {fileID: 33220543197452218}
   - component: {fileID: 23656805309643652}
   - component: {fileID: 95794863667810686}
+  - component: {fileID: 3852989820062689656}
+  - component: {fileID: 358399674284673112}
   m_Layer: 0
   m_Name: HexTop_DiamondGround
   m_TagString: Untagged
@@ -150,7 +124,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202581608872086}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: f0b0ae87006510f469f3a2e715063181, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -161,6 +135,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3852989820062689656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202581608872086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45008045, y: 0.76332265, z: 0.3553602}
+  m_Center: {x: -0.10213154, y: 0.41740406, z: -0.040345807}
+--- !u!114 &358399674284673112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202581608872086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1781eb159be6b494288460466d150a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollisionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1408475495100614
 GameObject:
   m_ObjectHideFlags: 0

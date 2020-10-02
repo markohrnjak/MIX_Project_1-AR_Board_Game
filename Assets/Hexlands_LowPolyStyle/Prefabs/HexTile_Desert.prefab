@@ -110,8 +110,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4629484508005506}
-  - component: {fileID: 5753607018813490943}
-  - component: {fileID: 8290292751328347148}
   m_Layer: 0
   m_Name: HexTile_Desert
   m_TagString: Untagged
@@ -135,32 +133,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5753607018813490943
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513751033591328}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8290292751328347148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513751033591328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1781eb159be6b494288460466d150a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onCollisionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1710670703866666
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +145,8 @@ GameObject:
   - component: {fileID: 33034917829144510}
   - component: {fileID: 23645304627436752}
   - component: {fileID: 95719108780574786}
+  - component: {fileID: 8854346190861221770}
+  - component: {fileID: 1490158722907334508}
   m_Layer: 0
   m_Name: HexTop_Desert
   m_TagString: Untagged
@@ -251,7 +225,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710670703866666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 16a68787b633c3a4da4a11f4483a97f5, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -262,3 +236,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8854346190861221770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710670703866666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3518155, y: 0.78488255, z: 0.39511657}
+  m_Center: {x: -0.030210035, y: 0.4424412, z: -0.024502259}
+--- !u!114 &1490158722907334508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710670703866666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1781eb159be6b494288460466d150a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollisionColor: {r: 0, g: 0, b: 0, a: 0}

@@ -23,7 +23,16 @@ public class BoardTile : MonoBehaviour
         this.GetComponent<Renderer>().material.color = onCollisionColor;
 
         Debug.Log("Space enter");
-        other.gameObject.GetComponent<Animator>().SetBool("Hit", true); //play "hit" animation
+
+        if (this.gameObject.tag == "Finish")
+        {
+            other.gameObject.GetComponent<Animator>().SetBool("Win", true); //play "win" animation
+        }
+
+        else
+        {
+            other.gameObject.GetComponent<Animator>().SetBool("Hit", true); //play "hit" animation
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,6 +42,8 @@ public class BoardTile : MonoBehaviour
 
         Debug.Log("Space exit");
         other.gameObject.GetComponent<Animator>().SetBool("Hit", false); //stop "hit" animation
+        other.gameObject.GetComponent<Animator>().SetBool("Win", false); //stop "win" animation
+
 
     }
 }
